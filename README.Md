@@ -3,7 +3,7 @@
 # Installation in linux
 Looking for installation docker tutorial for linux, especially linux mint? 
 
-[https://gist.github.com/bakunya/1aea90c554b18e45cfbcb8bda556e514/](Check out my github gist in here.)
+[Check out my github gist in here.](https://gist.github.com/bakunya/1aea90c554b18e45cfbcb8bda556e514/)
 
 i havent learn about docker compose yet, so i use bash script for simplify command of docker.
 
