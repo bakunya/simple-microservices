@@ -1,6 +1,12 @@
 # Simple microservices from Microservices with Node JS and React course by Stephen Grider
 
 # Installation in linux
+Looking for installation docker tutorial for linux, especially linux mint? 
+
+[https://gist.github.com/bakunya/1aea90c554b18e45cfbcb8bda556e514](Check out my github gist in here.)
+
+i havent learn about docker compose yet, so i use bash script for simplify command of docker.
+
 [https://askubuntu.com/questions/500071/running-a-sh-to-execute-multiple-commands](https://askubuntu.com/questions/500071/running-a-sh-to-execute-multiple-commands)
 
 ### Change script shell permission
