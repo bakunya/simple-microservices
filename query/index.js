@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const axios = require('axios')
 const app = express()
+const { network_events } = require('./config')
 
 const posts = {}
 
@@ -44,7 +45,6 @@ const handleEvent = (type, data) => {
 
 app.post('/events', (req, res) => {
     const { type, data } = req.body
-
     handleEvent(type, data)    
 
     res.send({  })
@@ -54,7 +54,7 @@ app.listen(4002, async () => {
     console.log('query running at port 4002')
 
     try {
-        const res = await axios.get('http://localhost:4005/events')
+        const res = await axios.get(`http://${network_events}:4005/events`)
 
         for (const event of res.data) {
             console.log('processing event', event.type)

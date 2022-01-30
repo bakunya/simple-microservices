@@ -5,7 +5,7 @@
 
 ### Change script shell permission
 ```bash
-chmod +x ./install.sh ./start.sh ./stop.sh ./restart.sh
+chmod +x ./install.sh ./start.sh ./stop.sh ./restart.sh ./remove.sh
 ```
 
 ### Create docker image
@@ -26,6 +26,11 @@ chmod +x ./install.sh ./start.sh ./stop.sh ./restart.sh
 ### Stop docker container
 ```bash
 ./stop.sh
+```
+
+### Remove docker container
+```bash
+./remove.sh
 ```
 
 # Port

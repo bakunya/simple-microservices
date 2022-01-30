@@ -3,6 +3,7 @@ const { randomBytes } = require('crypto')
 const axios = require('axios')
 const cors = require('cors')
 const app = express()
+const { network_events } = require('./config')
 
 const posts = {}
 
@@ -19,7 +20,7 @@ app.post('/posts', async (req, res) => {
     posts[id] = { id, title }
 
     try {
-        await axios.post('http://localhost:4005/events', { 
+        await axios.post(`http://${network_events}:4005/events`, { 
             type: 'PostCreated',
             data: { 
                 id, title
